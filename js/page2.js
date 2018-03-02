@@ -1,24 +1,10 @@
-// const userN = parseFloat(prompt('Enter any number'));
+let userN = parseFloat(prompt('Enter any number (from 3 to inf)'));
 
-// for (let i = 1; i > 0; i-=1) {
-//     if (i % 2 !== 0) {
-//         continue;
-//     } 
-//     document.write(i);
-//     document.write('<br>');
-// }  
-
-
-function fibonacci(num){
-  var a = 1, b = 0, temp;
-
-  while (num >= 1){
-    temp = a;
-    a = a + b;
-    b = temp;
-    num--;
-  }
-
-  return b;
+let pre = 1, prePrev = 1, next, fib;
+for (let i = 3; i <= userN; i++) {
+  next = pre + prePrev;
+  prePrev = pre;
+  pre = next;
+  document.write(next);
+  document.write('<br>');
 }
-document.write(fibonacci);

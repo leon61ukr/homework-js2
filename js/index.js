@@ -1,4 +1,4 @@
-let userN = parseFloat(prompt('Enter any number (from 3 to inf)'));
+let userN = parseFloat(prompt('Enter any number'));
 
 // let pre = 1, prePrev = 1, next = 0;
 // for (let i = 3; i <= userN; i++) {
